@@ -5,54 +5,168 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
     <style>
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px 50px;
-        background-color: #fff;
-        font-size: 20px;
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Times New Roman", Times, serif;
+      }
+      nav {
+        position: sticky;
+        top: 0px;
+        background-color: white;
+      }
+      .navbar-nav {
+        position: absolute;
+        top: 50px;
+        left: 700px;
+      }
+      .navbar-brand {
+        height: 100px;
+        width: 150px;
+      }
+      .nav-item {
+        display: inline;
+        margin-left: 50px;
+        a {
+          text-decoration: none;
+          font-size: 20px;
+          color: black;
+          font-weight: 900;
+        }
       }
 
-      .nav-logo {
-        height: 200px;
-        width: 200px;
+      .dropdown-menu {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        left: 260px;
+      }
+      .dropdown:hover .dropdown-menu {
         display: block;
       }
-
-      .nav-links {
-        list-style: none;
+      .about {
         display: flex;
-        gap: 30px;
+        flex-direction: row;
+        justify-content: space-between;
       }
-
-      .nav-links li a {
-        text-decoration: none;
-        color: #000;
-        font-weight: 600;
-        text-transform: capitalize;
+      .about1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      .about2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        p {
+          font-size: 22px;
+        }
+      }
+      p {
+        font-size: 22px;
       }
     </style>
   </head>
 
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo-container">
-          <a href="#">
-            <img src="logo.jpg" class="nav-logo" />
-          </a>
-        </div>
+    <nav>
+      <a href="#" class="navbar-brand">
+        <img src="logo.jpg" />
+      </a>
 
-        <ul class="nav-links">
-          <li><a href="index.html" target="_self">Home</a></li>
-          <li><a href="about.html" target="_self">About</a></li>
-          <li><a href="courses.html" target="_blank">Course offered</a></li>
-          <li><a href="alumni.html" target="_blank">Alumni</a></li>
-          <li><a href="career.html" target="_blank">Career</a></li>
-          <li><a href="contact.html" target="_blank">Contact us</a></li>
-        </ul>
-      </nav>
-    </header>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html" target="_self" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="about.html" target="_self" class="nav-link">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="courses.html" target="_blank" class="nav-link"
+            >Course offered</a
+          >
+          <ul class="dropdown-menu">
+            <li class="dropdown-item">
+              <a href="">MEARN Stack Development</a>
+            </li>
+            <li class="dropdown-item"><a href="">Full Stack Development</a></li>
+            <li class="dropdown-item"><a href="">AIML</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a href="alumni.html" target="_blank" class="nav-link">Alumni</a>
+        </li>
+        <li class="nav-item">
+          <a href="career.html" target="_blank" class="nav-link">Career</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html" target="_blank" class="nav-link">Contact us</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="about">
+      <div class="about1">
+        <img
+          src="https://images.pexels.com/photos/273665/pexels-photo-273665.jpeg"
+          height="400px"
+          width="400px"
+          alt=""
+        />
+      </div>
+      <div class="about2">
+        <h1>About Us</h1>
+        <h2>Univybe - Your Gateway to Global Education</h2>
+        <p>
+          Univybe (univybe.com) is a Hyderabad-based educational consultancy
+          specializing in study abroad services, offering personalized
+          counseling for university admissions, visa support, and test
+          preparation (GRE, SAT, PTE) for countries like the US, UK, and Canada.
+          They facilitate 10,000+ admissions and provide end-to-end guidance for
+          international education. Key details about Univybe: Services: Offers
+          end-to-end education consulting, including matching students with
+          1,000+ universities, visa processing, and test prep guidance. Focus
+          Areas: Heavily focused on UK and US admissions, featuring quick offer
+          turnaround times and scholarship assistance. Expertise: Mentors
+          students through the admissions process, with 350+ active mentors.
+          Target Audience: Students seeking higher education abroad,
+          specifically for undergraduate and postgraduate programs.
+        </p>
+      </div>
+    </div>
+    <p>
+      UNIVYBE is a dynamic and student-centered platform designed to create a
+      vibrant community where university students can connect, collaborate, and
+      grow together. The idea behind UNIVYBE is to bring students from different
+      academic backgrounds, cultures, and interests into a single digital space
+      that encourages learning beyond the classroom. In today’s fast-paced
+      educational environment, students often look for opportunities not only to
+      study but also to network, share ideas, and build meaningful
+      relationships. UNIVYBE acts as a bridge that connects these aspirations by
+      providing a platform where students can exchange knowledge, discuss
+      academic topics, discover events, and participate in various collaborative
+      activities. The platform promotes creativity, innovation, and engagement
+      by allowing students to showcase their talents, projects, and
+      achievements. Whether it is organizing campus events, discussing career
+      opportunities, or sharing learning resources, UNIVYBE encourages active
+      participation and interaction among students. One of the key aspects of
+      UNIVYBE is its focus on building a supportive student ecosystem where
+      individuals feel motivated to explore their potential and learn from one
+      another. It also helps students stay informed about university news,
+      workshops, competitions, and professional opportunities that can enhance
+      their academic and career journeys. By fostering communication and
+      collaboration, UNIVYBE helps break the barriers that often exist between
+      different departments or universities. Students can build networks that
+      extend beyond their campus and connect with like-minded individuals who
+      share similar goals and ambitions. Furthermore, UNIVYBE supports personal
+      development by encouraging discussions on leadership, innovation, and
+      skill building. In a world where digital connectivity plays a vital role
+      in education and professional growth, UNIVYBE stands as a modern
+      initiative that empowers students to create a lively and productive
+      academic community. Overall, UNIVYBE represents more than just a platform;
+      it symbolizes a culture of collaboration, creativity, and continuous
+      learning among university students.
+    </p>
   </body>
 </html>
