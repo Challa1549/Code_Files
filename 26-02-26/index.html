@@ -1,55 +1,62 @@
-<!-- Change or deletion of the name attributes in the input tag will lead to empty values on record submission-->
-<form action='https://forms.zohopublic.in/challasreedharreddy1549gm1/form/Registration/formperma/UdZ_oPwAC9HT_2Ugw5zAtADe12HlUQNHl5IOaIixDw4/htmlRecords/submit' name='form' id='form' method='POST' accept-charset='UTF-8' enctype='multipart/form-data'>
-<input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
-<input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
-<input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
-<h2>Registration</h2>
-<p></p>
-<label>
-Username
-<em>*</em>
-</label>
-<input  type="text" name="SingleLine" value="" fieldType=1 maxlength="255" placeholder="Username" />
-<label>
-Name
-</label>
-<input type="text" maxlength="255" name="Name_First" fieldType=7 placeholder="" />
-<label>First Name</label>
-<input type="text" maxlength="255" name="Name_Last" fieldType=7 placeholder="" />
-<label>Last Name</label>
-<label>
-Date of Birth
-</label>
-<input type="text" name="Date" maxlength="25" placeholder="" />
-<label>dd-MMM-yyyy</label>
-<label>
-Gender
-</label>
-<input type="radio" id="Radio_1" name="Radio" value="Male" />
-<label for="Radio_1" >Male</label>
-<input type="radio" id="Radio_2" name="Radio" value="Female" />
-<label for="Radio_2" >Female</label>
-<input type="radio" id="Radio_3" name="Radio" value="Prefer not to say" />
-<label for="Radio_3" >Prefer not to say</label>
-<label>
-Email
-</label>
-<input type="text" maxlength="255" name="Email" value="" fieldType=9 placeholder="" />
-<label>
-Phone
-</label>
-<input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" phoneFormat="1" isCountryCodeEnabled=false maxlength="20" value="" fieldType=11 id="international_PhoneNumber_countrycode" placeholder="" />
-<label>Number</label>
-<label>
-Linkedin URL
-</label>
-<input type="text" maxlength="2083" name="Website" value="" placeholder="" />
-<label>
-Github URL
-</label>
-<input type="text" maxlength="2083" name="Website1" value="" placeholder="" />
-<label>
-Upload your resume
-</label>
-<input type="file"  name="FileUpload" checktype="c1"/>
-<button type="submit"><em>Submit</em></button></form>
+<table cellpadding="20" cellspacing="2">
+  <form
+    action="https://forms.zohopublic.in/challasreedharreddy1549gm1/form/Registration/formperma/UdZ_oPwAC9HT_2Ugw5zAtADe12HlUQNHl5IOaIixDw4/htmlRecords/submit"
+    method="POST"
+  >
+    <tr>
+      <td><label> Username </label></td>
+      <td><input type="text" placeholder="Enter Username:" required /></td>
+    </tr>
+    <tr>
+      <td><label> Password </label></td>
+      <td><input type="password" placeholder="Enter Password:" required /></td>
+    </tr>
+    <tr>
+      <td><label> Email </label></td>
+      <td><input type="email" placeholder="Enter your Email:" required /></td>
+    </tr>
+    <tr>
+      <td><label> Phone Number </label></td>
+      <td>
+        <input type="number" placeholder="Enter your phone number:" required />
+      </td>
+    </tr>
+    <tr>
+      <td><label> DOB </label></td>
+      <td>
+        <input type="datetime-local" placeholder="Enter your Date of Birth:" />
+      </td>
+    </tr>
+    <tr>
+      <td><label> Gender </label></td>
+      <td>
+        <input type="radio" name="gen" /> Male<input type="radio" name="gen" />
+        Female<input type="radio" name="gen" /> Prefer not to say
+      </td>
+    </tr>
+    <tr>
+      <td><label> Rate your self in HTML CSS and JS (out of 10)</label></td>
+      <td><input type="range" min="0" max="10" /></td>
+    </tr>
+    <tr>
+      <td><label> Enter your Linkedin Profile</label></td>
+      <td><input type="url" placeholder="linkedin profile" /></td>
+    </tr>
+    <tr>
+      <td><label> Enter your github Profile</label></td>
+      <td><input type="url" placeholder="Github profile" /></td>
+    </tr>
+    <tr>
+      <td><label> Enter your portfolio</label></td>
+      <td><input type="url" placeholder="portfolio" /></td>
+    </tr>
+    <tr>
+      <td><label> Upload your resume </label></td>
+      <td><input type="file" placeholder="Upload your resume:" required /></td>
+    </tr>
+    <tr>
+      <td><input type="submit" value="Register Now" /></td>
+      <td><input type="Reset" value="Clear form" /></td>
+    </tr>
+  </form>
+</table>
