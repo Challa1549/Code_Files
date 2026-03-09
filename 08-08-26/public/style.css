@@ -1,0 +1,166 @@
+* {
+  background-image: linear-gradient(to bottom, #ffffff, #f1f1f1);
+}
+
+nav {
+  position: sticky;
+  top: 0px;
+  background-color: white;
+}
+.navbar-nav {
+  position: absolute;
+  top: 50px;
+  left: 800px;
+}
+.nav-item {
+  display: inline;
+  margin-left: 50px;
+  font-size: 20px;
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: 900px;
+  }
+}
+.nav-item:hover {
+  border: 2px solid rgb(24, 70, 142);
+  border-radius: 10%;
+}
+.dropdown-menu {
+  display: none;
+  z-index: 10;
+  left: 320px;
+  position: absolute;
+  top: 30px;
+}
+.dropdown-item {
+  padding: 9px;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  background-color: white;
+}
+.navbar-brand {
+  margin-left: 20px;
+}
+.home_img {
+  text-align: center;
+}
+@keyframes anim1 {
+  to {
+    border-radius: 100%;
+  }
+  from {
+    border-radius: 0%;
+  }
+}
+@keyframes anim2 {
+  to {
+    border-radius: 0%;
+  }
+  from {
+    border-radius: 100%;
+  }
+}
+.navbar-brand{
+  border-radius: 100%;
+  animation-name: anim2;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.round {
+  border-radius: 100%;
+  animation-name: anim1;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.about2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  p {
+    font-size: 22px;
+  }
+}
+.services {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 20px;
+}
+
+.services div {
+  width: 400px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+.services img {
+  width: 100%;
+  height: auto;
+}
+
+.services h3 {
+  margin-top: 10px;
+  font-weight: 900px;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+.mybutton {
+  font-size: 20px;
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+.mybutton:hover {
+  shadow: 90px;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 700px;
+  margin-left: 450px;
+}
+.contact input {
+  margin-left: 110px;
+  border-color: gray;
+}
+.forms {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+}
+footer {
+  text-align: center;
+  color: black;
+  font-style: italic;
+}
