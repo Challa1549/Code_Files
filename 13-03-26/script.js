@@ -95,3 +95,36 @@
 //     return a.reduce((acc, i) => acc + i)
 // }
 // console.log(sum(5, 7, 8, 9, 34, 56, 78, 98, 88))
+// var arr = [12, 1, 3]
+// var b = []
+// console.log(typeof arr)
+// console.log([] == [])
+// var marvel = ["Iron man", "Captain America ", "Thor", "Black Panther", "Hulk", "Thanos", "Thor"]
+// console.log("Original Array: " + marvel)
+// marvel.pop()
+// marvel.push("Sreedhar Reddy Challa")
+// marvel.shift()
+// marvel.unshift("Sreedhar Reddy Challa")
+// delete marvel[2]
+// marvel.splice(1, 2, "Sreedhar Reddy Challa")
+// marvel.splice(1, 0, "Sreedhar Reddy Challa", "Sreedhar Reddy Challa 2.0")
+// marvel.splice(1,2)
+// var favheroes = marvel.slice(1, 4)
+// console.log(favheroes)
+// console.log("Modified : " + marvel)
+// var index = marvel.indexOf("Thor")
+// var index = marvel.lastIndexOf("Thor")
+// var index = marvel.indexOf("Sreedhar Reddy Challa")
+// var lastindex = marvel.lastIndexOf("Sreedhar Reddy Challa")
+// console.log(index)
+// console.log(lastindex)
+// var favs = marvel.sort()
+// var favs = marvel.sort().reverse()
+// console.log(favs)
+// var nums = [44, 552, 34, 3535, 33, 5, 66677, 7543, 666, 32]
+// var sorted = nums.sort((a, b) => a - b)
+// var sorted = nums.sort((a, b) => b - a )
+// var changed = marvel.join('*')
+// var changed = marvel.join('   ')
+// var changed = marvel.concat(nums).reverse()
+// console.log(changed)
